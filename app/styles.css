@@ -1,7 +1,54 @@
-.app {
-  border: 1px solid black;
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  margin: 100px auto;
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.todo-tabs {
+  margin: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.todo-tabs ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: large;
+}
+
+.todo-tabs ul li {
+  border-bottom: 1px solid darkgrey;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.todo-tabs h1 {
+  font-weight: 300;
+  text-align: center;
+}
+
+.todo-tabs ul li:hover {
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgb(225, 225, 225);
+}
+
+.todo-color {
+  color: #0d6efd;
+}
+
+.completed-color {
+  color: #198754;
+}
+
+.archived-color {
+  color: #dc3545;
 }
