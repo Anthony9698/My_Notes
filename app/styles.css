@@ -9,8 +9,36 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+table {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+}
+
+table tr th {
+  font-weight: lighter;
+}
+
+#title {
+  width: 50%;
+  text-align: start;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.headings th {
+  border-bottom: thin solid #6c757d;
+  padding-bottom: 4px;
+}
+
 .main {
   width: 100%;
+  margin: 32px;
+  padding: 16px;
 }
 
 .todo-tabs {
@@ -46,10 +74,8 @@ body {
 }
 
 .new-task {
-  margin: 32px;
   max-width: 700px;
   display: flex;
-  padding: 16px;
   height: 32px;
 }
 
@@ -60,6 +86,7 @@ body {
   outline: none;
   padding-left: 8px;
   padding-right: 8px;
+  border: 1px solid #6c757d;
 }
 
 .new-task button {
